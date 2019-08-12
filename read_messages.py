@@ -65,6 +65,7 @@ def read_messages():
         for t in texters:
             print(t.name + " made " + str(t.text_count) + " messages (" + ("{:02.1f}").format(t.text_count / text_number * 100) + "%).")
             print(t.name + " texted " + str(t.word_count) + " words (" + ("{:02.1f}").format(t.word_count / word_number * 100) + "%).")
+            print(t.name + " texted approximately " + ("{:02.1f}").format(t.word_count / t.text_count) + " words per message.")
             print("")
 
         for t in texters:
